@@ -42,7 +42,7 @@
 
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
-
+const duplicateItems = ['Pencil', 'Notebook', 'yo-yo', 'Gum', 'Pencil', 'Notebook', 'yo-yo', 'Gum']
 
   // getLength passes the length of the array into the callback.
   function getLength(arr, cb) {
@@ -100,4 +100,12 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
- 
+  function removeDuplicates(array, cb) {
+    return cb(array);
+  }
+  
+  let dubs = removeDuplicates(itemsDouble, function(arr) {
+    return [...new Set(arr)];
+  })
+  
+  console.log(dubs);
