@@ -77,31 +77,29 @@ let runnersLargeSizeShirt = runners.filter((large) => {
 })
 console.log(runnersLargeSizeShirt);
 
-// // ==== Challenge 4: Use .reduce() ====
-// // The donations need to be tallied up and reported for tax purposes. Add up all the donations and save the total into a ticketPriceTotal variable.
+// ==== Challenge 4: Use .reduce() ====
+// The donations need to be tallied up and reported for tax purposes. Add up all the donations and save the total into a ticketPriceTotal variable.
 let ticketPriceTotal = runners.reduce((total, donastions) => {
   return total += donastions.donation;
 }, 0)
 console.log(ticketPriceTotal);
 
-// // ==== Challenge 5: Be Creative ====
-// // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
+// ==== Challenge 5: Be Creative ====
+// Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
-// // Problem 1
+// Problem 1
 let smallShirts = runners.filter((small) => {
   return small.shirt_size === 'S';
 });
 console.log(smallShirts);
 
-
-// // Problem 2
+// Problem 2
 let allEmail = runners.map((mail) => {
   return {'email': mail.email};
 });
 console.log(allEmail);
 
-
-// // Problem 3
+// Problem 3
 let donationsTotal = runners.filter((donations) => {
   return donations.donation > 100;
 });

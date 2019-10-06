@@ -104,8 +104,8 @@ const duplicateItems = ['Pencil', 'Notebook', 'yo-yo', 'Gum', 'Pencil', 'Noteboo
     return cb(array);
   }
   
-  let dubs = removeDuplicates(itemsDouble, function(arr) {
+  let duplicates = removeDuplicates(duplicateItems, function(arr) {
     return [...new Set(arr)];
   })
   
-  console.log(dubs);
+  console.log(duplicates);
