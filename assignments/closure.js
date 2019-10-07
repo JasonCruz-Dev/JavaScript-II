@@ -45,7 +45,7 @@ console.log(polyMath());
 
 const counterMaker = () => {
   let count = 0;
-  return function () {
+  return function counter () {
      ++count;
      return count;
   }
