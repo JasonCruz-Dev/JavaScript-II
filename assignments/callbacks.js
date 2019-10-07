@@ -85,8 +85,8 @@ const duplicateItems = ['Pencil', 'Notebook', 'yo-yo', 'Gum', 'Pencil', 'Noteboo
 
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  function contains(item, list, cb) {
-     return cb(list.includes(item));
+function contains(item, list, cb) {
+  return cb(list.includes(item));
   };
   
   let value = exists => {
