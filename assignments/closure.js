@@ -69,14 +69,14 @@ console.log(myCounter()); // 8
 const counterMakerSophisticated = () => {
   let count = 0;
   let limit = 10;
-
-    while(count <= limit) {
-      console.log(count);
-      count++;
-    }
-    let newCount = count;
-    return newCount;
+  while(count < limit) {
+    console.log(count);
+    count++;
+  }
+  let newCount = count;
+  return newCount;
 };
+console.log(counterMakerSophisticated());
 
 // const counterMaker = () => {
 //   let count = 0;
